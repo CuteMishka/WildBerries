@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Wildeberris</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wildeberries1$</title>
 	<style>
-		.image{
+		.container{
+			font-family: arial;
+		}
+		.container--mod{
+			position: relative;
+			font-family: sans-serif;
+		}
+		.container__textblock{
+			position: absolute;
+			bottom: 8px;
+			left: 3px;
+			font-size: 10px;
+			color: #cb11ab;
+			padding: 0 3px;
+    		border-radius: 20px;
+   			background-color: #fdeef9;
+		}
+		.container--img{
+			width: 156px;
+			height: 208px;
 			border-radius: 5px;
-			width: 180px;
-			height: 240px;
 		}
-		.image:hover{
+		.container__good-price__now{
+			font-size: 15px;
+			margin-right: 4px;
 		}
-		.text{
-		font-family: sans-serif;
-		}
-		.newprice{
+		.container__good-price__last{
 			color: #9999;
-			font-size: 52.95px 20px;
+			font-size: 10px;
+			text-decoration: line-through;
+			line-height: 15px;
 		}
-		.oldprice{
-			font-size: 62px 24px;
+		.container__moreinfo--mod{
+			color: #9999;
+			font-size: 10px;
 		}
 	</style>
 </head>
 <body>
-	<div>
-		<img src="https://images.shafastatic.net/240936543" class="image">
-		<div class="text">
-			<span class="oldprice"><strong>200$</strong></span>
-			<span class="newprice">400$</span>
+	<div class="container">
+		<div class="container--mod">
+			<img src="coffee.jpeg" class="container--img">
+			<div class="container__textblock">
+				<span><strong>-47%</strong></span>
+			</div>
 		</div>
+			<div class="container__good-price">
+				<span class="container__good-price__now"><strong>19.750 тг.</strong></span>
+				<span class="container__good-price__last">34 200тг</span>
+			</div>
+			<div class="container__moreinfo">
+				<span class="container__moreinfo--mod">Вкусное кофейное желе</span>
+			</div>
 	</div>
 </body>
 </html>
