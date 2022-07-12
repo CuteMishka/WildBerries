@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wildeberries1$</title>
 	<style>
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+		}
 		.card{
 			font-family: arial;
 			width: 156px;
@@ -58,8 +62,6 @@
     		align-items: center;
     		justify-content: center;
     		background-color: rgba(0, 0, 0, 0.15);
-    		width: 156px;
-    		height: 208px;
     		border-radius: 10px;
 
 		}
@@ -75,22 +77,41 @@
 	</style>
 </head>
 <body>
-	<div class="card">
-		<div class="card--mod">
-			<img src="coffee.jpeg" class="card--img">
-			<div class="card__textblock">
-				<span><strong>-47%</strong></span>
+	<div class="container">
+		<div class="card">
+			<div class="card--mod">
+				<img src="coffee.jpeg" class="card--img">
+				<div class="card__textblock">
+					<span><strong>-47%</strong></span>
+				</div>
+				<div class="card--mod__fasttravel">
+					<button class="card--mod__fasttravel--button"><a href="google.com"> Быстрый просмотр</a></button>
+				</div>
 			</div>
-			<div class="card--mod__fasttravel">
-				<button class="card--mod__fasttravel--button"><a href="google.com"> Быстрый просмотр</a></button>
+			<div class="card__good-price">
+				<span class="card__good-price__now"><strong>19.750 тг.</strong></span>
+				<span class="card__good-price__last">34 200тг</span>
 			</div>
-		</div>
-		<div class="card__good-price">
-			<span class="card__good-price__now"><strong>19.750 тг.</strong></span>
-			<span class="card__good-price__last">34 200тг</span>
-		</div>
-		<div class="card__moreinfo">
-			<span class="card__moreinfo--mod">Вкусное кофейное желе</span>
+			<div class="card__moreinfo">
+				<span class="card__moreinfo--mod">Вкусное кофейное желе</span>
+			</div>
+
+			<div class="card">
+			<div class="card--mod">
+				<img src="coffee.jpeg" class="card--img">
+				<div class="card__textblock">
+					<span><strong>-47%</strong></span>
+				</div>
+				<div class="card--mod__fasttravel">
+					<button class="card--mod__fasttravel--button"><a href="google.com"> Быстрый просмотр</a></button>
+				</div>
+			</div>
+			<div class="card__good-price">
+				<span class="card__good-price__now"><strong>19.750 тг.</strong></span>
+				<span class="card__good-price__last">34 200тг</span>
+			</div>
+			<div class="card__moreinfo">
+				<span class="card__moreinfo--mod">Вкусное кофейное желе</span>
 		</div>
 	</div>
 </body>
