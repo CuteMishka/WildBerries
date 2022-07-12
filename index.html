@@ -3,115 +3,88 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Wildeberries1$</title>
+	<title>Site</title>
 	<style>
-		.container{
-			display: flex;
-			flex-wrap: wrap;
-		}
-		.card{
-			font-family: arial;
-			width: 156px;
-			height: 260px;
-		}
-		.card--mod{
-			position: relative;
-			font-family: sans-serif;
-		}
-		.card__textblock{
-			position: absolute;
-			bottom: 8px;
-			left: 3px;
-			font-size: 10px;
-			color: #cb11ab;
-			padding: 0 3px;
-    		border-radius: 20px;
-   			background-color: #fdeef9;
-		}
-		.card--img{
-			width: 156px;
-			height: 208px;
-			border-radius: 5px;
-		}
-		.card__good-price__now{
-			font-size: 15px;
-			margin-right: 4px;
-		}
-		.card__good-price__last{
-			color: #9999;
-			font-size: 10px;
-			text-decoration: line-through;
-			line-height: 15px;
-		}
-		.card__moreinfo--mod{
-			color: #9999;
-			font-size: 10px;
-		}
-		:hover.card--mod > div{
-			display: flex;
-		}
-		.card--mod__fasttravel{
-			position: absolute;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			top: 0;
-			margin-left: auto;
-    		margin-right: auto;
-    		display: none;
-    		align-items: center;
-    		justify-content: center;
-    		background-color: rgba(0, 0, 0, 0.15);
-    		border-radius: 10px;
-
-		}
-		.card--mod__fasttravel--button{
-			background-color: white;
-			border: 1px solid white;
-			opacity: 0.9;
-			border-radius: 15px;
-			font-size: 8px;
-			padding: 5px;
-			color: black;
-		}
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+	body{
+		margin: 0;
+		background-color: #E4DEDC;
+	}
+	.container{
+		display: block;
+	}
+	.container__header__logo--img{
+		width: 150px;
+		height: 150px;
+		background-color: #BD9072;
+		display: inline;
+	}
+	.container__header__logo{
+		border-bottom: 4px solid #473C38;
+		background-color: #BD9072;
+	}
+	.container__header__textblock{
+		float: right;
+		margin-top: 49px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	ul.header--mod li{
+		display: inline;
+		text-decoration: none;
+	}
+	li{
+		margin-left: 20px;
+		padding-top: 76px;
+		margin-right: 20px;
+		font-size: 20px;
+	}
+	.container__stuck__imgtyrant{
+		width: 156px;
+		height: 208px;
+		border-radius: 10px;
+		margin-left: 20px ;
+		margin-top: 50px;
+		border: 5px solid #473C38;
+	}
+	.container__stuck{
+		width: 400px;
+		height: 300px;
+		background-color: #BD9072;
+		margin-top: 50px;
+		border-radius: 0 15px 15px 0;
+		border: 5px solid #473C38;
+	}
+	.header--mod--mainlogo{
+		margin-right: 360px;
+		color: #473C38;
+	}
+	.text{
+		float: right;
+		margin-right: 20px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 40px
+	}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="card">
-			<div class="card--mod">
-				<img src="coffee.jpeg" class="card--img">
-				<div class="card__textblock">
-					<span><strong>-47%</strong></span>
-				</div>
-				<div class="card--mod__fasttravel">
-					<button class="card--mod__fasttravel--button"><a href="google.com"> Быстрый просмотр</a></button>
-				</div>
-			</div>
-			<div class="card__good-price">
-				<span class="card__good-price__now"><strong>19.750 тг.</strong></span>
-				<span class="card__good-price__last">34 200тг</span>
-			</div>
-			<div class="card__moreinfo">
-				<span class="card__moreinfo--mod">Вкусное кофейное желе</span>
-			</div>
-
-			<div class="card">
-			<div class="card--mod">
-				<img src="coffee.jpeg" class="card--img">
-				<div class="card__textblock">
-					<span><strong>-47%</strong></span>
-				</div>
-				<div class="card--mod__fasttravel">
-					<button class="card--mod__fasttravel--button"><a href="google.com"> Быстрый просмотр</a></button>
+		<div class="header">
+			<div class="container__header__logo">
+				<img src="yba2.png" class="container__header__logo--img">
+				<div class="container__header__textblock">
+					<ul class="header--mod">
+						<li class="header--mod--mainlogo">YBA Trade HUB</li>
+						<li>Discord Link</li>
+						<li>YBA</li>
+					</ul>
 				</div>
 			</div>
-			<div class="card__good-price">
-				<span class="card__good-price__now"><strong>19.750 тг.</strong></span>
-				<span class="card__good-price__last">34 200тг</span>
+			<div class="container__stuck">
+				<img src="tyrant.jpg" class="container__stuck__imgtyrant">
+				<p class="text">Hot offer!</p>
 			</div>
-			<div class="card__moreinfo">
-				<span class="card__moreinfo--mod">Вкусное кофейное желе</span>
 		</div>
 	</div>
 </body>
